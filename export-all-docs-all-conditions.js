@@ -36,7 +36,7 @@ for(i=0;i<numFiles;i++) {
       }  
   } else {
     //set pdfName  
-    var exportTo = File(exportFilePath + "Appointedd for " + currFileName+'.pdf');  
+    var exportTo = File(exportFilePath + currFileName+'.pdf');  
     
     //export PDF as background task
     currDoc.asynchronousExportFile(ExportFormat.PDF_TYPE, exportTo,false,  exportFormat);  
